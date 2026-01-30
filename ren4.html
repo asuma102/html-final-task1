@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>葬送のフリーレン</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/abema.png">
+
+    <style>
+        body {
+            font-family: "Noto Sans JP", sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #1c2432;
+        }
+
+        .story-title {
+            font-family: "M PLUS Rounded 1c", sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.2em;
+            font-weight: 800;
+        }
+
+        .story-sub {
+            color: #1bb3a7;
+            font-size: 0.9rem;
+        }
+
+        .story-text {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+            object-position: 50% 15%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 250px;
+            }
+        }
+
+        footer {
+            background-color: #1c2432;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-film"></i> anima
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
+                    <li class="nav-item"><a class="nav-link" href="anime-list.html">作品一覧</a></li>
+                    <li class="nav-item"><a class="nav-link" href="anime-ranking.html">ランキング</a></li>
+                    <li class="nav-item"><a class="nav-link" href="anime-mylist.html">マイリスト</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">コミュニティ</a></li>
+                </ul>
+                <a href="anime-login.html" class="btn btn-light ms-3 d-none d-lg-block">
+                    <i class="bi bi-person-circle"></i> ログイン
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="text-center mb-4">
+            <div class="story-title text-success">STORY</div>
+            <div class="story-sub">あらすじ</div>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-6 col-md-3">
+                <select class="form-select">
+                    <option>1話</option>
+                    <option>2話</option>
+                    <option>3話</option>
+                </select>
+            </div>
+            <div class="col-6 col-md-3">
+                <select class="form-select">
+                    <option>一期</option>
+                    <option>二期</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-center mb-4">
+            <h5 class="text-success">#1 冒険の終わり</h5>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8">
+                <div id="animeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#animeCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#animeCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#animeCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#animeCarousel" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/kaito.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/harukaze.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/hiroto.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/asuma.jpg" class="d-block w-100" alt="">
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#animeCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#animeCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 story-text">
+                魔王を倒し王都へ凱旋した勇者ヒンメル一行。各々が冒険した10年を振り返りながらこれからの人生に想いを馳せる中、
+                エルフのフリーレンは感慨にふけることもなく、また魔法探求へと旅立っていく。50年後、皆との約束のためフリーレンは再び王都へ。
+                その再会をきっかけに、彼女は新たな旅へと向かうことに―。
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 story-text">
+                脚本：鈴木智尋　絵コンテ：斎藤圭一郎　演出：辻彩夏　作画監督：長澤礼子
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="fw-bold mb-3">
+                             予告動画
+                        </h3>
+                        <div style="position:relative; padding-bottom:56.25%; height:0;">
+                            <iframe width="700" height="400"
+                                src="https://www.youtube.com/embed/ZLKPbfzgwDk?si=S5FRoFuutYdfaNsl"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container text-center">
+        <a href="anime-detail.html" class="btn btn-outline-primary mb-3">
+            <i class="bi bi-arrow-left"></i> 作品ページへ戻る
+        </a>
+    </div>
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> anima</h5>
+                    <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サイト情報</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="pri.html" class="text-light text-decoration-none">プライバシー</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サポート</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3">フォローする</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-discord fs-4"></i></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <hr class="border-light">
+            <p class="text-center text-light mb-0">&copy; 2025 AniListo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

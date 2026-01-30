@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>葬送のフリーレン</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="icon" href="images/abema.png">
+
+
+  <style>
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .character-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .tag {
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    .navbar {
+      background-color: #1c2432;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ナビゲーション -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-film"></i> anima
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="anime-list.html">作品一覧</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="anime-ranking.html">ランキング</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="anime-mylist.html">マイリスト</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="anime-community.html">コミュニティ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-lg-none" href="anime-login.html">ログイン</a>
+          </li>
+        </ul>
+        <a href="anime-login.html" class="btn btn-light ms-3 d-none d-lg-block">
+          <i class="bi bi-person-circle"></i> ログイン</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">ホーム</a></li>
+        <li class="breadcrumb-item"><a href="anime-list.html">作品一覧</a></li>
+        <li class="breadcrumb-item"><a href="anime-detail.html">葬送のフリーレン</a></li>
+        <li class="breadcrumb-item active" aria-current="page">人物紹介</li>
+      </ol>
+    </nav>
+
+    <!-- タイトル -->
+    <h1 class="fw-bold mb-4">フリーレン</h1>
+
+    <div class="row g-4 mb-5">
+      <!-- 画像 -->
+      <div class="col-md-5">
+        <img src="images/huri-ren.jpg" alt="フリーレン" class="character-img">
+      </div>
+
+      <!-- 基本情報 -->
+      <div class="col-md-7">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="fw-bold mb-3"><i class="bi bi-person-fill"></i> キャラクター詳細</h4>
+
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item"><strong>名前：</strong> フリーレン</li>
+              <li class="list-group-item"><strong>種族：</strong> エルフ</li>
+              <li class="list-group-item"><strong>職業：</strong> 魔法使い</li>
+              <li class="list-group-item"><strong>年齢：</strong> 千年以上</li>
+              <li class="list-group-item"><strong>CV：</strong> 種﨑敦美</li>
+            </ul>
+
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tag">エルフ</span>
+              <span class="tag">長命種</span>
+              <span class="tag">魔法使い</span>
+              <span class="tag">主人公</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- キャラクター詳細 -->
+    <div class="card mb-5">
+      <div class="card-body">
+        <h4 class="fw-bold mb-3">キャラクター詳細</h4>
+        <p>
+          フリーレンは、魔王を討伐した勇者パーティーの一員であり、
+          千年以上生きるエルフの魔法使いである。
+        </p>
+        <p>
+          長命種ゆえに人間の寿命や感情を軽く考えていたが、
+          仲間である勇者ヒンメルの死をきっかけに
+          「人を知る旅」へと歩み出す。
+        </p>
+        <p>
+          冷静沈着で感情表現は乏しいが、
+          人の想いに触れるたびに少しずつ心を変化させていく姿が
+          本作の大きな魅力となっている。
+        </p>
+      </div>
+    </div>
+
+    <!-- 能力・特徴 -->
+    <div class="card mb-5">
+      <div class="card-body">
+        <h4 class="fw-bold mb-3"> 能力・特徴</h4>
+        <ul>
+          <li>膨大な魔力量と高度な魔法制御能力</li>
+          <li>攻撃魔法・防御魔法・補助魔法すべてに精通</li>
+          <li>古代魔法や失われた魔法の知識を多数保有</li>
+          <li>戦闘よりも「魔法の収集」を好む性格</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 名シーン -->
+    <div class="card mb-5">
+      <div class="card-body">
+        <h4 class="fw-bold mb-3"> 印象的なエピソード</h4>
+        <p>
+          勇者ヒンメルの葬儀で流した涙。
+          それは彼女が初めて「人の死」を重く受け止めた瞬間だった。
+        </p>
+        <p>
+          その涙が、千年を生きるエルフの時間を
+          ゆっくりと変えていくことになる。
+        </p>
+      </div>
+    </div>
+
+    <!-- 戻る -->
+    <div class="text-center">
+      <a href="anime-detail.html" class="btn btn-outline-primary">
+        <i class="bi bi-arrow-left"></i> 作品ページへ戻る
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="bg-dark text-light text-center py-3">
+    <div class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> anima</h5>
+            <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="fw-bold mb-3">サイト情報</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">About</a></li>
+              <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+              <li><a href="pri.html" class="text-light text-decoration-none">プライバシー</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mb-3">
+            <h6 class="fw-bold mb-3">サポート</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
+              <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+              <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 class="fw-bold mb-3">フォローする</h6>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-discord fs-4"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-light">
+        <p class="text-center text-light mb-0">&copy; 2025 AniListo. All rights reserved.</p>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

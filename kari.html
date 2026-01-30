@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>葬送のフリーレン</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="icon" href="images/abema.png">
+    <style>
+        body {
+            font-family: "Noto Sans JP", sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1c2432;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Episode Card */
+        .card {
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .episode-title {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 179, 179, 0.9);
+            color: #fff;
+            padding: 6px 12px;
+            font-size: 14px;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-film"></i> anima
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-list.html">作品一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-ranking.html">ランキング</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-mylist.html">マイリスト</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-community.html">コミュニティ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none" href="anime-login.html">ログイン</a>
+                    </li>
+                </ul>
+                <a href="anime-login.html" class="btn btn-light ms-3 d-none d-lg-block">
+                    <i class="bi bi-person-circle"></i> ログイン</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+
+        <!-- シーズン選択 -->
+        <div class="d-flex justify-content-center mb-5">
+            <select class="form-select w-auto">
+                <option selected>1期</option>
+                <option>2期</option>
+            </select>
+        </div>
+
+        <!-- エピソード一覧 -->
+        <div class="row g-4">
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#01 冒険の終わり</span>
+                    <a href="ren4.html" class="stretched-link"></a>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/02_08.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#02 別に魔法じゃなくたって…</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/03_06.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#03 人を殺す魔法</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/04_10.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#04 魂の眠る地</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/04_05-1.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#05 死者の幻影</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01 (1).jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#06 村の英雄</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_05-2.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#07 おとぎ話のようなもの</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_03-4.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#08 葬送のフリーレン</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_02-6.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#09 断頭台のアウラ</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_05.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#10 強い魔法使い</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_05-2 (1).jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#11 北川諸国の冬</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_04-4.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#12 本物の勇者</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01-6.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#13 同族嫌悪</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01 (2).jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#14 若者の特権</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_03-2.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#15 厄介事の匂い</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01-4.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#16 長寿友達</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_02-7.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#17 じゃあ元気で</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_02.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#18 １級魔法使い選抜試験</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01-2.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#19 入念計画</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_04-4 (2).jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#20 必要な殺し</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_04-6.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#21 魔法の世界</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_04.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#22 次からは敵同士</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01-2.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#23 迷宮攻略</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/FRN_EP24_still_013.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#24 完璧な複製体</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_04-5.jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#25 致命的な隙</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01 (3).jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#26 魔法の高み</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_01-2 (1).jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#27 人間の時代</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="images/01_04-4 (3).jpg" class="card-img-top" alt="">
+                    <span class="episode-title">#07 また会ったときに恥ずかしいからね</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container text-center">
+        <a href="anime-detail.html" class="btn btn-outline-primary mb-3">
+            <i class="bi bi-arrow-left"></i> 作品ページへ戻る
+        </a>
+    </div>
+
+    <!-- フッター -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> anima</h5>
+                    <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サイト情報</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="pri.html" class="text-light text-decoration-none">プライバシー</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サポート</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3">フォローする</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-discord fs-4"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="border-light">
+            <p class="text-center text-light mb-0">&copy; 2025 AniListo. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="backToTopBtn" class="btn shadow d-flex align-items-center justify-content-center">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+</body>
+
+</html>
